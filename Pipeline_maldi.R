@@ -8,7 +8,7 @@ library(pheatmap)                           # Heatmap plot
 
 
 
-setwd("D:/Pós-graduação/Mass_spectometry")
+setwd("")
 
 
 # =========================
@@ -19,7 +19,7 @@ setwd("D:/Pós-graduação/Mass_spectometry")
 
 # Load the data
 
-path <- "Raw MALDI Data/TLM-1/"
+path <- # put the path of your data
 
 raw_data <- importBrukerFlex(path) # From Bruker machine
 
