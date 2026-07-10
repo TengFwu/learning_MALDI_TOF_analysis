@@ -1,3 +1,10 @@
+if (!require("MALDIquant")) install.packages("MALDIquant")
+if (!require("ALDIquantForeign")) install.packages("ALDIquantForeign")
+if (!require("tidyverse")) install.packages("tidyverse")
+if (!require("patchwork")) install.packages("patchwork")
+if (!require("pheatmap")) install.packages("pheatmap")
+
+
 
 # Packages
 library(MALDIquant)                         # MALDI-TOF data manipulation
@@ -27,6 +34,10 @@ raw_data <- importBrukerFlex(path) # From Bruker machine
 
 QC(raw_data)
 
+
+# If you wanna inspect the metadata, you can use this
+
+raw_data[[1]]@metaData # choose the sample
 
 # ------------------------------------------- #
 #        Pre-process - step by step
